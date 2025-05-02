@@ -2,6 +2,7 @@
 import HeroSection from "@/components/HeroSection";
 import FeaturesSection from "@/components/FeaturesSection";
 import PopularProducts from "@/components/PopularProducts";
+import TestimonialsSection from "@/components/TestimonialsSection";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
@@ -42,6 +43,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* Добавлен раздел с отзывами */}
+      <TestimonialsSection />
 
       {/* Контактная секция */}
       <section className="py-16 bg-gray-50">
