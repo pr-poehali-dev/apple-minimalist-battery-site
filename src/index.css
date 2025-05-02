@@ -69,3 +69,30 @@ body {
 .smooth-transition {
   transition: all 0.3s ease;
 }
+
+/* Эффект для выпадающего меню в стиле Apple */
+@keyframes slideDownFade {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-appear {
+  animation: slideDownFade 0.2s ease-out;
+}
+
+/* Подсветка hover для элементов навигации */
+.nav-link:hover {
+  transition: color 0.2s ease;
+}
+
+/* Плавный фон для навигации */
+.nav-blur {
+  backdrop-filter: saturate(180%) blur(20px);
+  background-color: rgba(255, 255, 255, 0.8);
+}
